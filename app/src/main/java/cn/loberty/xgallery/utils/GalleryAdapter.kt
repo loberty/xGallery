@@ -35,6 +35,7 @@ class GalleryAdapter:ListAdapter<PhotoItem,MyViewHolder>(DIFF) {
         }
         Glide.with(holder.itemView)
             .load(getItem(position).previewUrl)
+            .placeholder(R.drawable.ic_face_black_24dp)
             .listener(object : RequestListener<Drawable>{
                 override fun onLoadFailed(
                     e: GlideException?,

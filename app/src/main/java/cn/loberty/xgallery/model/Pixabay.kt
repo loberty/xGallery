@@ -1,6 +1,8 @@
 package cn.loberty.xgallery.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
 /**
  * Create by WangChen on 2020/9/8
@@ -32,6 +34,7 @@ data class Pixabay(
     }
 }
 
+@Parcelize
 data class PhotoItem(
     @SerializedName("id") val photoId:Int,
     @SerializedName("webformatURL") val previewUrl:String,
@@ -55,4 +58,4 @@ data class PhotoItem(
     "user_id": 1564471,
     "user": "anncapictures",
     "userImageURL": "https://cdn.pixabay.com/user/2015/11/27/06-58-54-609_250x250.jpg"*/
-)
+): Parcelable

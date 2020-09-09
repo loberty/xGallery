@@ -1,6 +1,5 @@
 package cn.loberty.xgallery
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment

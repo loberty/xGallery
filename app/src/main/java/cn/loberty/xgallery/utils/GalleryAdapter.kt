@@ -27,8 +27,9 @@ class GalleryAdapter:ListAdapter<PhotoItem,MyViewHolder>(DIFF) {
         val holder = MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.gallery_item,parent,false))
         holder.itemView.setOnClickListener{
             Bundle().apply {
-                putParcelable("PHOTO",getItem(holder.adapterPosition))
-                holder.itemView.findNavController().navigate(R.id.action_galleryFragment_to_photoFragment,this)
+                putParcelableArrayList("PHOTO_LIST", ArrayList(currentList))
+                putInt("PHOTO_POSITION",holder.adapterPosition)
+                holder.itemView.findNavController().navigate(R.id.action_galleryFragment_to_pageFragment,this)
             }
         }
         return holder

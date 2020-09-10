@@ -11,12 +11,12 @@
         android:label="Gallery"
         tools:layout="@layout/fragment_gallery">
         <action
-            android:id="@+id/action_galleryFragment_to_photoFragment"
-            app:destination="@id/photoFragment" />
+            android:id="@+id/action_galleryFragment_to_pageFragment"
+            app:destination="@id/pageFragment" />
     </fragment>
     <fragment
-        android:id="@+id/photoFragment"
-        android:name="cn.loberty.xgallery.PhotoFragment"
-        android:label="Photo"
-        tools:layout="@layout/fragment_photo" />
+        android:id="@+id/pageFragment"
+        android:name="cn.loberty.xgallery.PageFragment"
+        android:label="fragment_page"
+        tools:layout="@layout/fragment_page" />
 </navigation>

@@ -4,10 +4,12 @@
     android:id="@+id/swipRefreshLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="2dp"
     tools:context=".GalleryFragment" >
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
+
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

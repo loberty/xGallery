@@ -2,15 +2,15 @@
 <io.supercharge.shimmerlayout.ShimmerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/shimmerLayout"
+    android:id="@+id/shimmerLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PhotoFragment" >
+    android:background="#000000"
+    android:orientation="vertical">
 
     <uk.co.senab.photoview.PhotoView
-        android:id="@+id/photoView"
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:src="@drawable/ic_launcher_background" />
+        android:adjustViewBounds="true" />
 </io.supercharge.shimmerlayout.ShimmerLayout>
